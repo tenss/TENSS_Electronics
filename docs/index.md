@@ -1,11 +1,5 @@
 # TENSS 2026 - Electronics Practical
 
----
-
-> [!NOTE]
-> **Lecture Slides Available:** You can view the accompanying interactive lecture slides for Day 1.0 (Ephys, Behavior & Passive Electronics 101) [here](lectures/slides.html).
-
----
 
 ##  Component reference:
 
@@ -15,7 +9,7 @@ current. You can think of them like constrictions in a water pipe. They
 are non-polarized (so it doesn't matter in which direction you put them)
 and look like this:
 
-![](./media/image21.png){: style="width: 1.6822714348206473in; height: 1.6822714348206473in;" }
+![](./media/image21.png){: style="width: 1.6822714348206473in; height: 1.6822714348206473in; display: block; margin: 0 auto" }
 
 The color code indicates the resistance (the amount of constriction in
 the pipe). However, it is often easier just to measure them using an
