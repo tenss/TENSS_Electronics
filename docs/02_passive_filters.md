@@ -3,6 +3,27 @@
 !!! warning "Data Persistence"
     The interactive tables below store data in your browser's temporary memory. **Refreshing the page or closing the tab will clear your entries.** Please use the "Export CSV" or "Save Plot" buttons to save your work.
 
+## Capacitor charge and discharge
+
+**Exercise 2-1** - Next, we want to understand how capacitors store charge and resist changes in voltage. On your breadboard, build the following circuit.
+
+![](./media/image33.png){: style="width: 3.869792213473316in; height: 2.1800404636920385in;" }
+
+Measure the voltage across the capacitor using the oscilloscope. What is it?
+
+With your probes attached to the circuit, disconnect the lead from +5V to the circuit.
+
+![](./media/image16.png){: style="width: 4.46875in; height: 2.408546587926509in;" }
+
+![](./media/image18.png){: style="width: 0.3697922134733158in; height: 0.3254166666666667in;" }
+
+- LED
+
+- What happens to the LED?
+
+- What happens to the voltage on the scope? Why? (Hint: there is a first and second-order answer to this question, a full explanation requires considering the LEDs I/V characteristics which you can look into if you want :)
+
+
 **Capacitors and filters:**
 
 The simplest form of filtering in electronics is by using a resistor and
@@ -31,14 +52,16 @@ voltage-clamp recordings are limited by the resistance and capacitance
 of your electrode. Although it is not always possible to avoid this
 problem, you should at least watch out for it.
 
-**Exercise 1-6:** Assemble a **highpass** filter with the following
+**Exercise 2-2:** Assemble a **highpass** filter with the following
 values and use it to filter the function generator.
 
-$$R_{1} = \ 1\ kOhm$$
+$$R_{1} = 1\text{ k}\Omega$$
 
-$$C_{1} = \ 0.47\ µF$$ (The negative pin is the shorter one)
+$$C_{1} = 0.47\,\mu\text{F}$$
 
-The frequency cutoff (defined as \~30% reduction in voltage amplitude)
+Note: If you have an electrolytic capacitor, the negative pin is the shorter one.
+
+The frequency cutoff (defined as $\sim 30\%$ reduction in voltage amplitude)
 of the filter is $\frac{1}{2\pi R_{1}C_{1}}$.
 
 To test the frequency response of this circuit connect your function
@@ -83,7 +106,7 @@ fill out the following table:
 - What happens to the amplitude of the output as the input frequency
   varies?
 
-**Exercise 1-7:** Feed a 400 Hz sinusoidal signal to your circuit, and
+**Exercise 2-3:** Feed a 400 Hz sinusoidal signal to your circuit, and
 visualize the input and output of the high pass filter with 2
 oscilloscope probes. Do you notice any difference between input and
 output signals other than the amplitude?
@@ -94,7 +117,7 @@ input.
 
 Change the input frequency to 1000 Hz, does the phase lag change?
 
-**Exercise 1-8:** So far we have been recording sine waves. Square waves
+**Exercise 2-4:** So far we have been recording sine waves. Square waves
 consist of a broad range of frequencies, with edges containing high
 frequencies. Produce a square wave with your scope's function generator
 and then use the scope to measure the signal before and after the
@@ -120,11 +143,13 @@ understand exactly what effect they have across frequencies before
 comparing raw and filtered signals, or the results of different filter
 types. The phase response of a filter captures its effect on the phase
 of various frequency components. For the first order RC filter you have
-constructed it is given by.
-$$phase\ shift\ (f) = \  - arctan(2\pi fRC)$$
-**Exercise 1-9:** Assemble a **low pas**s filter with the following
+$\text{phase shift}(f) = -\arctan(2\pi fRC)$
+
+**Exercise 2-5:** Assemble a **low pas**s filter with the following
 values:
-$$R_{2} = \ 220\ kOhm$$$$C_{2} = \ 560\ pF$$
+
+$$R_{2} = 220\text{ k}\Omega, C_{2} = 560\text{ pF}$$
+
 The frequency cutoff of the filter is $\frac{1}{2\pi R_{1}C_{1}}$
 
 Again, try changing the frequency of the input sine wave to test the
@@ -184,7 +209,7 @@ frequency.
 
 ![](./media/image36.png){: style="width: 2.8586318897637795in; height: 4.828125546806649in;" }
 
-**Exercise 1-10:** Connect the output of the PicoScope "AWG" to your
+**Exercise 2-6:** Connect the output of the PicoScope "AWG" to your
 oscilloscope and look at the raw signal as well as at the Fourier
 transform (FFT). What is the FFT doing? Connect the input to your filter
 circuit and look at the output. Does it all make sense?
