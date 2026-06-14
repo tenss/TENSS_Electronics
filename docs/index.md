@@ -28,6 +28,21 @@ blue smoke out because it's very hard to put it back inside.
   <figcaption><b>Capacitors.</b> (left) A non-polarized 0.22 uF ceramic capacitor and (right) a polarized 1000 uF electrolytic capacitor with its negative lead clearly marked. The voltage rating indicates the max voltage the capacitor should be used with.</figcaption>
 </figure>
 
+### Switch (Push Button)
+A simple mechanical device that can connect or disconnect an electrical path. The switches in your kit are **momentary tactile push buttons**, meaning they only make contact while you are actively pressing them down.
+
+<figure align="center">
+  <img src="media/switch.jpg" style="width: 3.2in;">
+  <figcaption><b>Tactile Push Buttons.</b> (left) Underside view overlaid with internal schematic: the green line and blue line show the pairs of pins that are permanently connected together. The white switch symbol shows the bridge created when the button is pressed. (right) Top view.</figcaption>
+</figure>
+
+!!! note "Alignment Methods"
+    Because the pairs of pins (connected by the green and blue lines) are permanently shorted even when the button is not pressed, it is easy to accidentally bypass the switch. To use it correctly, you can choose one of three alignment methods:
+    
+    1. **Bridge the center ravine:** Place the switch across the middle dividing ravine of the breadboard (so the green pins are on one side and the blue pins are on the other). Connect your input on the left and output on the right. Pressing the button bridges the connection.
+    2. **Align with the horizontal rows:** Orient the switch so that the permanently connected pins (green pair or blue pair) go into the same horizontal breadboard row (since holes on the same row are electrically joined). You can then switch the connection between that row and the row containing the opposite pair.
+    3. **Wire diagonally:** Connect your input lead to any pin and your output lead to the diagonal opposite pin (e.g., top-left to bottom-right). Since the left side is green and the right side is blue, diagonal wiring guarantees you cross the switch boundary regardless of how you position it on the board.
+
 ### Op-amp
 An op-amp is short for operational amplifier. It is a
 ubiquitous active[^3], analog integrated circuit. It looks like this:
