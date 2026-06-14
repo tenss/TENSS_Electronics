@@ -87,21 +87,17 @@ circuit in two steps to see how a floating node behaves in a real circuit:
 
 **Exercise 1-4**
 
-### Step 1: The Floating Switch (No Pull-down)
+1. Place a push button on your breadboard.
+2. Connect one side to the $+5\,\text{V}$ supply.
+3. Connect the opposite side to your oscilloscope probe to measure $V_{\text{out}}$. Leave it completely disconnected from any resistor or ground.
+4. Set the scope to a sensitive vertical range (e.g., $100\,\text{mV/div}$ or $500\,\text{mV/div}$).
 
 <figure align="center" markdown="1">
   <img src="../media/floating_switch_circuit.jpg" style="width: 4.5in;">
   <figcaption markdown="1"><b>Floating switch circuit.</b> The output terminal $V_{\text{out}}$ is completely disconnected from any resistor or return path when the switch is open, making the input float.</figcaption>
 </figure>
 
-1. Place a push button on your breadboard.
-2. Connect one side to the $+5\,\text{V}$ supply.
-3. Connect the opposite side to your oscilloscope probe to measure $V_{\text{out}}$. Leave it completely disconnected from any resistor or ground.
-4. Set the scope to a sensitive vertical range (e.g., $100\,\text{mV/div}$ or $500\,\text{mV/div}$).
-
 * **Question:** What is $V_{\text{out}}$ when you press the button? What happens to the voltage when you release the button? Does it quickly and cleanly return to $0\,\text{V}$?
-
-### Step 2: The Complete Circuit (Adding the Pull-down)
 
 5. Now, connect a $10\,\text{k}\Omega$ resistor between your signal line ($V_{\text{out}}$) and the negative terminal of the battery (the bottom return line) as shown in the schematic below.
 
