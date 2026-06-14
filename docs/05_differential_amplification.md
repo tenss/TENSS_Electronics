@@ -19,11 +19,15 @@ not interested in). A differential amplifier can be built out of an
 op-amp with a feedback resistor between one input and one output port,
 as shown below:
 
-![](./media/image17.jpg){: style="width: 2.6979166666666665in; height: 1.9027777777777777in;" }
+![](./media/image17.jpg){: style="width: 2.6979166666666665in; height: 1.9027777777777777in; display: block; margin: 0 auto;" }
 
 An ideal differential amplifier will amplify the difference between its
 2 input ports:
-$$V_{out\ } = \ A_{d\ }(V_{in\  + \ } - \ V_{in\  -})$$$$\ A_{d\ \ \ } = \ \frac{R_{2}}{\ R_{1}}$$
+
+$$V_{out\ } = \ A_{d\ }(V_{in\  + \ } - \ V_{in\  -})$$
+
+$$\ A_{d\ \ \ } = \ \frac{R_{2}}{\ R_{1}}$$
+
 $A_{d}$ is referred to as the differential gain.
 
 **Question (bonus):** Can you derive the gain term? Hint: $R_{1}$ and
@@ -61,7 +65,7 @@ Let's put everything we've learned so far together. If we add two
 voltage followers at the inputs of the differential amplifier, we get
 the following circuit (you don't need to make it):
 
-![](./media/image2.jpg){: style="width: 3.75in; height: 2.9009437882764653in;" }
+![](./media/image2.jpg){: style="width: 3.75in; height: 2.9009437882764653in; display: block; margin: 0 auto;" }
 
 This is called an instrumentation amplifier and is a basic building
 block of many e-phys measurement systems. It has a high input impedance
@@ -72,7 +76,7 @@ inputs of the two voltage followers. The final gain of the circuit will
 be $\ (\frac{R_{2}}{R_{1}}) \times (1 + \frac{{2R}_{3}}{R_{g}}\ )$,
 which can be easily modified by changing $R_{g}$.
 
-![](./media/image4.jpg){: style="width: 4.029514435695538in; height: 2.9175120297462818in;" }
+![](./media/image4.jpg){: style="width: 4.029514435695538in; height: 2.9175120297462818in; display: block; margin: 0 auto;" }
 
 **Question (bonus):** Can you think of an advantage for adding $R_{g}$?
 
@@ -80,7 +84,7 @@ which can be easily modified by changing $R_{g}$.
 extracellular recording system, what parameters would you consider when
 choosing the amplification gain?
 
-**Exercise 4-1:**
+**Exercise 5-1:**
 
 In this section, we will use a commercial instrumentation amplifier that
 encapsulates this entire circuit in a single chip designed to amplify
@@ -94,7 +98,7 @@ Now, set the gain using $R_{g\ } = 47\ kOhm$.
 
 - Measure the gain.
 
-## ![](./media/image12.png){: style="width: 4.057292213473316in; height: 2.803338801399825in;" }
+![](./media/image12.png){: style="width: 4.057292213473316in; height: 2.803338801399825in; display: block; margin: 0 auto;" }
 
 Change the value of $R_{g}$to get a gain of 10 or higher (check the
 datasheet).
