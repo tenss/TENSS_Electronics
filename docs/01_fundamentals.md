@@ -1,5 +1,20 @@
 # Part 1 - Resistors, capacitors, and recording fundamentals 
 
+## Floating Inputs 
+
+Before building circuits, it is important to understand what happens to an electrical node that is not connected to a defined voltage—a state known as a **floating** input.
+
+**Exercise 1-1**
+
+Connect an oscilloscope probe to **Channel 1** of your oscilloscope. Leave the other end of the wire completely disconnected (floating in the air). Set the oscilloscope scale to a sensitive vertical range (e.g., $50\,\text{mV/div}$ or $100\,\text{mV/div}$).
+
+- What do you see? Why? What happens if you shake the wire around?
+
+Connect the ground of the oscilloscope (the tiny crocodile clamp) to the signal input on the same channel.
+
+- What happens to the noise? Why? What happens when you move the probe?
+
+
 **Voltage divider:**
 
 A voltage divider is an electrical circuit that outputs a fraction of
