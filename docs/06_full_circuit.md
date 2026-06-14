@@ -4,7 +4,7 @@ You have so far built all the essential elements you need to measure
 extracellular signals. You will get the full analog ephys measurement
 system by adding the filter to the amplifier stage.
 
-![](./media/image9.png){: style="width: 100%; max-width: 900px; display: block; margin: 0 auto;" }
+![](./media/full_ephys_circuit.png){: style="width: 100%; max-width: 900px; display: block; margin: 0 auto;" }
 
 **Question (bonus):** Both the filter and the instrumentation amplifier
 amplify the signal. What do you think is the advantage of this 2 stage

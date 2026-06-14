@@ -3,7 +3,7 @@
 A common way to produce a large input impedance in electronics is using
 the following circuit:
 
-![](./media/image7.png){: style="width: 1.8697922134733158in; height: 1.557001312335958in; display: block; margin: 0 auto;" }
+![](./media/voltage_follower_basic.png){: style="width: 1.8697922134733158in; height: 1.557001312335958in; display: block; margin: 0 auto;" }
 
 This circuit is called a voltage follower or voltage buffer. It is an
 op-amp with its output connected to its negative input. In this circuit,
@@ -20,7 +20,7 @@ as a follower).
 source with $R_{s}\  = \ 1\ MOhm$ and $R_{sh}\  = \ 22\ kOhm$ (see
 circuit below).
 
-![](./media/image5.png){: style="width: 3.5833333333333335in; height: 2.875in; display: block; margin: 0 auto;" }
+![](./media/voltage_divider_large_rs.png){: style="width: 3.5833333333333335in; height: 2.875in; display: block; margin: 0 auto;" }
 
 - What happens to Vout when you disconnect $R_{sh}$?
 
@@ -47,12 +47,12 @@ max = 32 V)</small>.
 The following diagram is an overhead view of the LM358 with its pins
 labeled. Use this as a map when making connections on your breadboard.
 
-![](./media/image25.png){: style="width: 4in; height: 4in; display: block; margin: 0 auto;" }
+![](./media/lm358_pinout.png){: style="width: 4in; height: 4in; display: block; margin: 0 auto;" }
 
 Now, go forth and place a voltage follower between the $1\ MOhm$
 resistor and the $22\ kOhm$ resistor on the breadboard:
 
-![](./media/image1.png){: style="width: 5.265587270341207in; height: 2.9310061242344707in; display: block; margin: 0 auto;" }
+![](./media/voltage_follower_breadboard.png){: style="width: 5.265587270341207in; height: 2.9310061242344707in; display: block; margin: 0 auto;" }
 
 - Now, what happens to Vout when you disconnect $R_{sh}$? And when you
   put a low resistance (\~$1\ kOhm$) instead?
@@ -71,13 +71,13 @@ resistor and the $22\ kOhm$ resistor on the breadboard:
 
 Move the $22\ kOhm$ resistor to the input side of the op-amp. 
 
-![](./media/image31.png){: style="width: 4.526919291338583in; height: 2.2927602799650044in; display: block; margin: 0 auto;" }
+![](./media/opamp_input_divider.png){: style="width: 4.526919291338583in; height: 2.2927602799650044in; display: block; margin: 0 auto;" }
 
 - What is the attenuation imposed by the resistor divider?
 
 Remember that the gain of a non-inverting feedback network is given by $k\  = 1 + \ \frac{R_{f}}{R_{g}}$ . Get a couple of resistors with values between $1\ kOhm$ and $100\ kOhm$ that allow you to approximately (within 10%) undo the attenuation that is imposed on the input signal by the $\frac{1\ MOhm}{22\ kOhm}$ resistor divider to recover your input waveform.
 
-![](./media/image6.png){: style="width: 5.822916666666667in; height: 3.6875in; display: block; margin: 0 auto;" }
+![](./media/non_inverting_amplifier.png){: style="width: 5.822916666666667in; height: 3.6875in; display: block; margin: 0 auto;" }
 
 - What values did you choose for $R_{f}$ and $R_{g}$? What is the
   calculated gain?

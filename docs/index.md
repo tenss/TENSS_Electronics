@@ -9,7 +9,7 @@ current. You can think of them like constrictions in a water pipe. They
 are non-polarized (so it doesn't matter in which direction you put them)
 and look like this:
 
-![](./media/image21.png){: style="width: 1.6822714348206473in; height: 1.6822714348206473in; display: block; margin: 0 auto" }
+![](./media/resistor_photo.png){: style="width: 1.6822714348206473in; height: 1.6822714348206473in; display: block; margin: 0 auto" }
 
 The color code indicates the resistance (the amount of constriction in
 the pipe). However, it is often easier just to measure them using an
@@ -24,7 +24,7 @@ inside them and allows them to work will escape! Don't let the magic
 blue smoke out because it's very hard to put it back inside.
 
 <figure align="center">
-  <img src="media/image26.png" style="width: 3.2in;">
+  <img src="media/capacitors_polarized_ceramic.png" style="width: 3.2in;">
   <figcaption><b>Capacitors.</b> (left) A non-polarized 0.22 uF ceramic capacitor and (right) a polarized 1000 uF electrolytic capacitor with its negative lead clearly marked. The voltage rating indicates the max voltage the capacitor should be used with.</figcaption>
 </figure>
 
@@ -49,8 +49,8 @@ ubiquitous active[^3], analog integrated circuit. It looks like this:
 
 <figure align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
-    <img src="media/image22.png" style="width: 2.0in;">
-    <img src="media/image13.png" style="width: 3.8in;">
+    <img src="media/opamp_741_dip8.png" style="width: 2.0in;">
+    <img src="media/opamp_741_internal_schematic.png" style="width: 3.8in;">
   </div>
   <figcaption><b>The 741 is a classic op-amp.</b></figcaption>
 </figure>
@@ -72,8 +72,8 @@ circuits. It has the following connection diagram.
 
 <figure align="center">
   <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
-    <img src="media/image29.png" style="width: 5.5in;">
-    <img src="media/image27.png" style="width: 6.4in;">
+    <img src="media/breadboard_plastic_view.png" style="width: 5.5in;">
+    <img src="media/breadboard_internal_view.png" style="width: 6.4in;">
   </div>
   <figcaption><b>A small bread board (left) with the top plastic removed (right).</b> The dark lines are metal strips that the pins of components are pressed into.</figcaption>
 </figure>
@@ -90,7 +90,7 @@ low-value shut resistor in series with the probe that can, e.g. short
 power supplies.
 
 <figure align="center">
-  <img src="media/image32.png" style="width: 3.2in;">
+  <img src="media/multimeter_photo.png" style="width: 3.2in;">
   <figcaption><b>A multimeter.</b> At no point in the course should your multimeter read "600V AC". If your multimeter reads this, and you're alive, leave the area.</figcaption>
 </figure>
 
@@ -111,12 +111,12 @@ unintended circuits with the ground lead on scope probes. Be careful
 where you put it.
 
 <figure align="center">
-  <img src="media/image14.png" style="width: 6.4in;">
+  <img src="media/oscilloscope_benchtop.png" style="width: 6.4in;">
   <figcaption><b>A benchtop scope with integrated display</b></figcaption>
 </figure>
 
 <figure align="center">
-  <img src="media/image30.png" style="width: 4.5in;">
+  <img src="media/oscilloscope_pico.png" style="width: 4.5in;">
   <figcaption><b>A Pico USB scope that pairs with computer software</b></figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ attenuation. We want to keep our probes in 10x.
 attenuating probe so that it can multiply its captured values by 10.
 
 <figure align="center">
-  <img src="media/image24.png" style="width: 5.8in;">
+  <img src="media/oscilloscope_probe_10x.png" style="width: 5.8in;">
   <figcaption><b>10x Scope probe</b></figcaption>
 </figure>
 
@@ -155,7 +155,7 @@ microcontroller's pins and allow you to load programs using USB. The
 programs are written in C++ and uploaded using a device-specific tool.
 
 <figure align="center">
-  <img src="media/image19.png" style="width: 4.0in;">
+  <img src="media/teensy_pinout.png" style="width: 4.0in;">
   <figcaption><b>Teensy 3.2 Pinout.</b> Potentially relevant pins for the projects: practical are A14/DAC, Vin, and GND. You will upload your programs over the USB connection and they will run on the microcontroller (black chip in the center of the board).</figcaption>
 </figure>
 
@@ -175,7 +175,7 @@ We'll only really need these at the end when we record from cockroach
 legs.
 
 <figure align="center">
-  <img src="media/image28.png" style="width: 4.7in;">
+  <img src="media/power_supply_benchtop.png" style="width: 4.7in;">
   <figcaption><b>A power supply.</b> This stock photo of one is acting strange: it's sourcing 3A at 30V (90W of power), with nothing connected between its output terminals. Where is that current going??</figcaption>
 </figure>
 
@@ -184,7 +184,7 @@ regulators that provide fixed output voltage (+/-15V) and are useful for
 breadboarding.
 
 <figure align="center">
-  <img src="media/image8.png" style="width: 4.2in;">
+  <img src="media/power_supply_switching_module.png" style="width: 4.2in;">
   <figcaption><b>A simple switching supply was made for the course.</b> This device has fixed +/-15V supplies and can be easily plugged into a breadboard. It's noisy: the outputs are not a pure DC voltage but have all kinds of little wiggles embedded on top of these voltages.</figcaption>
 </figure>
 

@@ -7,15 +7,15 @@
 
 **Exercise 2-1** - Next, we want to understand how capacitors store charge and resist changes in voltage. On your breadboard, build the following circuit.
 
-![](./media/image33.png){: style="width: 3.869792213473316in; height: 2.1800404636920385in;" }
+![](./media/capacitor_led_circuit.png){: style="width: 3.869792213473316in; height: 2.1800404636920385in;" }
 
 Measure the voltage across the capacitor using the oscilloscope. What is it?
 
 With your probes attached to the circuit, disconnect the lead from +5V to the circuit.
 
-![](./media/image16.png){: style="width: 4.46875in; height: 2.408546587926509in;" }
+![](./media/led_disconnect_breadboard.png){: style="width: 4.46875in; height: 2.408546587926509in;" }
 
-![](./media/image18.png){: style="width: 0.3697922134733158in; height: 0.3254166666666667in;" }
+![](./media/led_symbol.png){: style="width: 0.3697922134733158in; height: 0.3254166666666667in;" }
 
 - LED
 
@@ -36,7 +36,7 @@ frequency, the lower the "resistance" of the capacitor. More precisely
 the current through a capacitor is proportional to the rate of voltage
 changes ($I\  = \ C\ dV/dt$). Consider the 2 circuits below.
 
-![](./media/image10.png){: style="width: 2.8125in; height: 2.7340113735783027in;" }
+![](./media/highpass_lowpass_comparison.png){: style="width: 2.8125in; height: 2.7340113735783027in;" }
 
 **Question:** Which one do you think is a high pass filter (allows
 higher frequencies to pass to the output) and which one is a low pass
@@ -207,7 +207,7 @@ detects the hardware ("Picoscope 2204A). Select it and click on the
 "Gen" section on the top left and sweep, On, Up Down, and reasonable
 frequency.
 
-![](./media/image36.png){: style="width: 2.8586318897637795in; height: 4.828125546806649in;" }
+![](./media/picoscope_awg_connection.png){: style="width: 2.8586318897637795in; height: 4.828125546806649in;" }
 
 **Exercise 2-6:** Connect the output of the PicoScope "AWG" to your
 oscilloscope and look at the raw signal as well as at the Fourier

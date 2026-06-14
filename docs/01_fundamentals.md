@@ -5,7 +5,7 @@
 A voltage divider is an electrical circuit that outputs a fraction of
 the input voltage it receives. Consider the circuit below.
 
-![](./media/image20.png){: style="width: 2.418474409448819in; height: 2.563583770778653in;" }
+![](./media/voltage_divider_schematic.png){: style="width: 2.418474409448819in; height: 2.563583770778653in;" }
 
 The current going through $R_{1}$, also passes through $R_{2}$. We'll
 call this current $I$. According to Ohm's law:
@@ -38,7 +38,7 @@ measure $V_{out}$ using your multimeter.
 
 Next, we need to get comfortable with our oscilloscope because we are going to be using it a lot over the next couple days.
 
-![](./media/image35.png){: style="width: 6.4375in; height: 2.9166666666666665in;" }
+![](./media/oscilloscope_panel.png){: style="width: 6.4375in; height: 2.9166666666666665in;" }
 
 Our scopes have 2 input channels. Either of the inputs can be sent through a threshold to capture the signals collected on both channels in the vicinity of a trigger event.
 
@@ -156,7 +156,7 @@ Finally, we need to adjust our trigger to capture this waveform:
 
 Make sure your scope is running by pressing the Run/Stop button. If all has gone well you should see something like this on your screen:
 
-![](./media/image15.png){: style="width: 4.921875546806649in; height: 3.69538823272091in; display: block; margin: 0 auto;" }
+![](./media/oscilloscope_sine_wave.png){: style="width: 4.921875546806649in; height: 3.69538823272091in; display: block; margin: 0 auto;" }
 
 ## Electrode Model
 
@@ -170,7 +170,7 @@ Make sure your scope is running by pressing the Run/Stop button. If all has gone
 
 Now that we can make measurements and generate signals with our scope, we want to measure the output from a simple electrode model. We consider the following circuit as a simplified model of the electrode and the measurement system.
 
-![](./media/image23.png){: style="width: 2.6770833333333335in; height: 1.823520341207349in;" }
+![](./media/electrode_model_schematic.png){: style="width: 2.6770833333333335in; height: 1.823520341207349in;" }
 
 We imagine that the function generator on the scope (voltage source in the image above) is a huge neuron. $R_{s}$ stands for the series resistance of the electrode. $R_{sh}$ is the shunt or parallel resistor and represents the effective resistance along all possible paths through which the current can flow to the ground through your recording system.
 

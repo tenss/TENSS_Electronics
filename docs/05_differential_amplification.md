@@ -19,7 +19,7 @@ not interested in). A differential amplifier can be built out of an
 op-amp with a feedback resistor between one input and one output port,
 as shown below:
 
-![](./media/image17.jpg){: style="width: 2.6979166666666665in; height: 1.9027777777777777in; display: block; margin: 0 auto;" }
+![](./media/differential_amplifier.jpg){: style="width: 2.6979166666666665in; height: 1.9027777777777777in; display: block; margin: 0 auto;" }
 
 An ideal differential amplifier will amplify the difference between its
 2 input ports:
@@ -65,7 +65,7 @@ Let's put everything we've learned so far together. If we add two
 voltage followers at the inputs of the differential amplifier, we get
 the following circuit (you don't need to make it):
 
-![](./media/image2.jpg){: style="width: 3.75in; height: 2.9009437882764653in; display: block; margin: 0 auto;" }
+![](./media/instrumentation_amplifier_basic.jpg){: style="width: 3.75in; height: 2.9009437882764653in; display: block; margin: 0 auto;" }
 
 This is called an instrumentation amplifier and is a basic building
 block of many e-phys measurement systems. It has a high input impedance
@@ -76,7 +76,7 @@ inputs of the two voltage followers. The final gain of the circuit will
 be $\ (\frac{R_{2}}{R_{1}}) \times (1 + \frac{{2R}_{3}}{R_{g}}\ )$,
 which can be easily modified by changing $R_{g}$.
 
-![](./media/image4.jpg){: style="width: 4.029514435695538in; height: 2.9175120297462818in; display: block; margin: 0 auto;" }
+![](./media/instrumentation_amplifier_rg.jpg){: style="width: 4.029514435695538in; height: 2.9175120297462818in; display: block; margin: 0 auto;" }
 
 **Question (bonus):** Can you think of an advantage for adding $R_{g}$?
 
@@ -98,7 +98,7 @@ Now, set the gain using $R_{g\ } = 47\ kOhm$.
 
 - Measure the gain.
 
-![](./media/image12.png){: style="width: 4.057292213473316in; height: 2.803338801399825in; display: block; margin: 0 auto;" }
+![](./media/ina121_pinout.png){: style="width: 4.057292213473316in; height: 2.803338801399825in; display: block; margin: 0 auto;" }
 
 Change the value of $R_{g}$to get a gain of 10 or higher (check the
 datasheet).

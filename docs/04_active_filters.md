@@ -13,7 +13,7 @@ to make active filters. The advantage of active filters compared to
 passive ones is that you can filter and amplify the signal at the same
 time. Here are two examples of active filters:
 
-![](./media/image3.jpg){: style="width: 5.927083333333333in; height: 4.76622375328084in; display: block; margin: 0 auto;" }
+![](./media/active_lowpass_highpass.jpg){: style="width: 5.927083333333333in; height: 4.76622375328084in; display: block; margin: 0 auto;" }
 
 **Question:** Try to figure out which of the above circuits is a low
 pass and which one is a high pass filter.
@@ -21,7 +21,7 @@ pass and which one is a high pass filter.
 By combining the two circuits above, you can make an inverting bandpass
 filter circuit.
 
-![](./media/image11.jpg){: style="width: 4.981503718285214in; height: 2.6406255468066493in; display: block; margin: 0 auto;" }
+![](./media/active_bandpass_filter.jpg){: style="width: 4.981503718285214in; height: 2.6406255468066493in; display: block; margin: 0 auto;" }
 
 The low-frequency cutoff of this bandpass filter is
 $\frac{1}{2\pi R_{1}C_{1}}$, and the high-frequency cutoff,
