@@ -39,19 +39,6 @@ $R_{2}$ effectively acts as a voltage divider.
 they should get rid of all noise. Then why do we need to use Faraday
 cages to remove line noise?
 
-**Answer:** First, the exact amount of noise in V~in+~ might be
-different from that in V~in-~ (why could this be the case?). Second, the
-noise could reach the system after the amplifier. Finally, in practice,
-differential amplifiers are not perfect, and some of the common voltage
-to $V_{in +}$and $V_{in\  -}$ also makes its way to the output.
-Therefore the output voltage is:
-$$V_{out\  +} = \ A_{d\ }(V_{in\  + \ } - \ V_{in\  -})\  + \ A_{cm}(V_{in\  + \ } + \ V_{in\  -})$$
-Ideally, we want $A_{cm}$to be zero. In practice, it is never zero, but
-a very small value (the datasheet will specify this value for your
-op-amp model). The smaller $A_{cm}$, the better the differential
-amplifier suppresses the common noise at its inputs, which is referred
-to as having a higher common mode rejection ratio (CMRR).
-
 When dealing with small signals (differential term) and very large noise
 (common mode term), such as line noise, even a small $A_{cm}$ can lead
 to a large common mode term in the output that not only overwhelms the
