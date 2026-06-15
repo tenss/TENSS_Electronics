@@ -80,43 +80,6 @@ Connect the ground of the oscilloscope (the tiny crocodile clamp) to the signal 
 
 - What happens to the noise? Why? What happens when you move the probe?
 
-## Pull-down resistor
-
-Now we want to build a simple circuit to measure the state of a button. We will build this 
-circuit in two steps to see how a floating node behaves in a real circuit:
-
-**Exercise 1-4**
-
-1. Place a push button on your breadboard.
-   
-    !!! warning "Warning"
-        The pins of the switch are shorted by pairs! Refer to the push button diagram on the [introduction page](index.md#switch-push-button) (or ask a TA) to make sure you do not accidentally bypass it.
-
-2. Connect one side to the $+5\,\text{V}$ supply.
-3. Connect the opposite side to your oscilloscope probe to measure $V_{\text{out}}$. Leave it completely disconnected from any resistor or ground.
-4. Set the scope to a sensitive vertical range (e.g., $100\,\text{mV/div}$ or $500\,\text{mV/div}$).
-
-<figure align="center" markdown="1">
-  <img src="../media/floating_switch_circuit.jpg" style="width: 4.5in;">
-  <figcaption markdown="1"><b>Floating switch circuit.</b> The output terminal $V_{\text{out}}$ is completely disconnected from any resistor or return path when the switch is open, making the input float.</figcaption>
-</figure>
-
-* **Question:** What is $V_{\text{out}}$ when you press the button? What happens to the voltage when you release the button? Does it quickly and cleanly return to $0\,\text{V}$?
-
-5. Now, connect a $10\,\text{k}\Omega$ resistor between your signal line ($V_{\text{out}}$) and the negative terminal of the battery (the bottom return line) as shown in the schematic below.
-
-<figure align="center" markdown="1">
-  <img src="../media/pulldown_circuit.jpg" style="width: 4.5in;">
-  <figcaption markdown="1"><b>Switch circuit with a pull-down resistor.</b> When the switch is open, the resistor pulls $V_{\text{out}}$ down to the negative terminal of the battery (0V). When the switch is closed, it connects the positive terminal (+5V) directly to $V_{\text{out}}$.</figcaption>
-</figure>
-
-* **Question:** What is the voltage at $V_{\text{out}}$ when the button is released now? 
-* **Question:** What is the voltage when the button is pressed?
-* **Question:** Measure and calculate the expected voltage at $V_{\text{out}}$ when the switch is closed. Use the voltage divider formula from Exercise 1-1 (treating the closed switch as a resistor $R_{\text{switch}} \approx 1\,\Omega$). 
-
-This experiment demonstrates why inputs (such as amplifier channels or microcontroller pins) must never be left floating. When no active source is driving a wire, we need a way to tie it to a default reference. We achieve this using a **pull-down resistor** (a resistor connecting the signal line to the negative terminal) or a **pull-up resistor** (connecting it to the positive terminal), which keeps the node at a stable state while allowing active signals to easily override it.
-
----
 
 ## Generating signals with the oscilloscope
 
