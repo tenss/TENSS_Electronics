@@ -4,6 +4,7 @@
 - Don't send someone to the board?
 - Remove electrode model at the end
 - put back parallel / series
+- Add AC/DC
 
 # Practicals Part 1:
 
@@ -12,8 +13,19 @@
 # Lecture 2 (Capacitors):
 
 - remove the last slide (why?)
+- Say that Capacitor is a resistor that changes with frequency
 - add impedence
 - add relation between plate size and capacitance
+
+# Practicals part 2:
+
+- Add a LED "mini lecture" first
+- LED forward voltage will block capacitor discharge
+
+# Lecture 3 (Filter and aliasing)
+
+- show the DC + oscillation for the filter example only second. First put a square wave
+- 
 
 # Practicals in general:
 
