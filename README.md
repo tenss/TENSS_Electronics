@@ -3,8 +3,7 @@
 This repository contains the learning resources and practical guides for the **TENSS 2026 Electronics Module (Day 1.0)**.
 
 
-Link to the webpage:
-[tenss.github.io/TENSS_Electronics/](tenss.github.io/TENSS_Electronics/)
+Link to the webpage: [https://tenss.github.io/TENSS_Electronics/](https://tenss.github.io/TENSS_Electronics/)
 
 
 ---
