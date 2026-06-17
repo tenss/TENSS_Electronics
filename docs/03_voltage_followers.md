@@ -20,12 +20,12 @@ as a follower).
 source with $R_{s}\  = \ 1\ MOhm$ and $R_{sh}\  = \ 22\ kOhm$ (see
 circuit below).
 
-![](./media/voltage_divider_large_rs.png){: style="width: 3.5833333333333335in; height: 2.875in; display: block; margin: 0 auto;" }
+![](./media/voltage_divider.png){: style="width: 3.5833333333333335in; height: 2.875in; display: block; margin: 0 auto;" }
 
 - What happens to Vout when you disconnect $R_{sh}$?
 
-Now add a voltage buffer between $R_{s}$ and $R_{sh}$ (see circuit
-below). Use $Rf\  = \ 1\ kOhm$for the feedback resistor. To do this,
+Next, you will add a voltage buffer between $R_{s}$ and $R_{sh}$ (see circuit
+below). To do this,
 you will need to use an op-amp. We will use LM358AN/LM358AP (you can
 google the datasheet). It's not the best op-amp, it's not the worst.
 But it's certainly one of the cheapest. It's also really forgiving \--
@@ -45,12 +45,12 @@ the proper range of dc supply voltage and polarity</u>**. <small>(It's
 max = 32 V)</small>.
 
 The following diagram is an overhead view of the LM358 with its pins
-labeled. Use this as a map when making connections on your breadboard.
+labeled. Use this as a map when making connections on your breadboard. Note the orientation of the notch at the top of the diagram with respect to the pin positions.
 
 ![](./media/lm358_pinout.png){: style="width: 4in; height: 4in; display: block; margin: 0 auto;" }
 
-Now, go forth and place a voltage follower between the $1\ MOhm$
-resistor and the $22\ kOhm$ resistor on the breadboard:
+Now, go forth and place a voltage follower between the $1\ MOhm$ $R_{s}$
+resistor and the $22\ kOhm$ $R_{sh}$ resistor on the breadboard:
 
 ![](./media/voltage_follower_breadboard.png){: style="width: 5.265587270341207in; height: 2.9310061242344707in; display: block; margin: 0 auto;" }
 
@@ -66,6 +66,9 @@ resistor and the $22\ kOhm$ resistor on the breadboard:
   $22\ kOhm$ resistor. Where is this current coming from? What voltage
   would be required to generate this current without the op-amp? Would
   this be possible using passive elements?
+
+
+- **Bonus 2:** Would anything change if we use a $Rf\  = \ 1\ kOhm$ as a feedback resistor in the feedback connection of the voltage follower?
 
 ## **Exercise 3-2** 
 
@@ -85,8 +88,7 @@ Remember that the gain of a non-inverting feedback network is given by $k\  = 1 
 <!-- -->
 
 - Bonus: Why is trying to **exactly** undo the attenuation a fool's errand
-  (Hint: think about if your resistors are _exactly_ what they claim
-  to be)
+  (Hint: think about whether or not your resistors have _exactly_ the resistance they claim to have)
 
 ##  
 
