@@ -2,6 +2,23 @@
 
 This page lists the equipment and consumables required for the Extracellular Electrophysiology Electronics Practical.
 
+## Packing List
+
+Students should pack the following parts in a box:
+
+- Multimeter (with 2 probes)
+- 1 box of jumper wire
+- 1 resistor kit
+- 2 capacitor kit
+- 1 bag of LED
+- A breadboard with 2 amps on it (everything else removed)
+- 1 pair of needle for recording
+- 1 picoscope with USB cable
+- 2 or 3 oscilloscope probe
+- 1 bnc to crocodile clamp cable
+- 1 bnc cable
+- 1 crappy oscilloscope with power cable
+
 ## Equipment
 
 These items are part of the lab bench setup and should be handled with care.
